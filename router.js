@@ -1,9 +1,9 @@
 'use strict';
 const express = require('express');
 const router = express.Router();
-const asyncWrapper = require('../../middleware/asyncWrapper');
+const asyncWrapper = require('./middleware/asyncWrapper');
 
-// Does this link to schema or collections
+// Add in collections and schema here right?
 
 router.post('/signup', asyncWrapper(async (req, res) => {
     console.log('body of signup request', req.body);

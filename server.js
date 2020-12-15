@@ -1,4 +1,3 @@
-
 'use strict'
 
 const express = require('express');
@@ -17,7 +16,6 @@ const serverError = require('./middleware/500');
 //Routes
 const authRouter = require('./router');
 router.use(authRouter);
-
 
 
 //Middleware
