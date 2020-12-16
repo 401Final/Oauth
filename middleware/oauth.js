@@ -58,7 +58,7 @@ async function exchangeCodeForToken(code) {
  */
 async function getRemoteUserInfo(token) {
     let userResponse =
-      await superagent.get(remoteAPI)
+      await //we are not using superagent.get(remoteAPI)
         .set('user-agent', 'express-app')
         .set('Authorization', `Bearer ${token}`)
   
