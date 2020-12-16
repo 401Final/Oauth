@@ -4,11 +4,12 @@ Oauth login via Google
 ### Authors: Riva Davidowski and Darius Lee Pasilaban
 
 
-### Installing:
+### Installing Dependencies/Using Oauth:
 
-You will need to install the following on your machine:
+You will need to clone the repo and do an `npm i`. We used Google for our Oauth provider and connected our MongoDB schema/collection to our oauth route.
 
-- `npm init -y `
+Our dependencies include:
+
 - **The entry point for this app is: `index.js`**
 - `npm install` for the following:
   
@@ -25,17 +26,16 @@ You will need to install the following on your machine:
 
 ```
 
+
 Start server:
 
+/* give it a port number and optionally pass a function to call when app starts listening on given port*/
+
 ```
-
-    /* give it a port number and optionally pass a function to call when app
-     starts listening on given port*/
-
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}`));
-
+app.listen(port, () => console.log(`Listening on port ${port}`))
 ```
+
 
 
 ### env Requirements:
