@@ -27,14 +27,12 @@ Our dependencies include:
 ```
 
 
-Start server:
+**Start server:**
 
 /* give it a port number and optionally pass a function to call when app starts listening on given port*/
 
-```
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Listening on port ${port}`))
-```
 
 
 
